@@ -13,7 +13,7 @@ Each algorithm is implemented in its own directory with:
 ## 🔍 Implemented Algorithms
 
 ### **Search Algorithms** ✅
-- **[Binary Search](./binary-search/)** - Efficiently searches sorted arrays by repeatedly dividing the search interval in half. **Time Complexity:** O(log n)
+- **[Binary Search](./src/BinarySearch/)** - Efficiently searches sorted arrays by repeatedly dividing the search interval in half. **Time Complexity:** O(log n)
 
 ### **Sorting Algorithms**
 - **[Bubble Sort](./bubble-sort/)** - Simple comparison-based algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if needed. **Time Complexity:** O(n²)
