@@ -1,6 +1,6 @@
 public class BinarySearch {
 
-    public static int conventionalSearch(String[] arr, String name){
+    public static int linearSearch(String[] arr, String name){
 
         for(int i = 0; i < arr.length; i++){
             if(arr[i].equals(name)){
@@ -32,15 +32,15 @@ public class BinarySearch {
 
 
     public static void main(String[] args) {
-        String[] phoneBook = {
-                "Aaron", "Bella", "Caleb", "Diana", "Ethan",
-                "Fiona", "George", "Hannah", "Ian", "Julia",
-                "Kevin", "Luna", "Michael", "Nora", "Oscar",
-                "Paula", "Quentin", "Rachel", "Samuel", "Tina",
-                "Ulysses", "Violet", "William", "Xander", "Yasmine", "Zack"
-        };
 
-            String searchedName = "Rachel";
+            String[] phoneBook = new String[20000];
+
+            for (int i = 0; i < 20000; i++) {
+                phoneBook[i] = "Name" + String.format("%05d", i);  // ex: Name00000, Name00001, ..., Name09999
+                // Huge list of names for a better comparison between linear and binary search
+            }
+
+            String searchedName = "Name09999";
 
             long startTime = System.nanoTime();
             int index = binarySearch(phoneBook, searchedName);
@@ -52,10 +52,10 @@ public class BinarySearch {
                 System.out.println("Name not found in Phone Book");
             }
 
-            System.out.printf("Total time with Binary Search: %.9f seconds\n", (endTime - startTime) / 1_000_000_000.0); // convert ms to s
+            System.out.printf("⏰ Total time with Binary Search: %.9f seconds\n", (endTime - startTime) / 1_000_000_000.0); // convert ms to s
 
             startTime = System.nanoTime();
-            index = conventionalSearch(phoneBook, searchedName);
+            index = linearSearch(phoneBook, searchedName);
             endTime = System.nanoTime();
 
             if(index != -1){
@@ -64,7 +64,7 @@ public class BinarySearch {
                 System.out.println("Name not found in Phone Book");
             }
 
-        System.out.printf("Total time with Conventional Search: %.9f seconds\n", (endTime - startTime) / 1_000_000_000.0);
+        System.out.printf("⏰ Total time with linear Search: %.9f seconds\n", (endTime - startTime) / 1_000_000_000.0);
 
         }
     }
