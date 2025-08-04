@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class Fibonnaci {
 
     static int fibonnaciIterative(int position) {
-        int a = 0, b = 1, c;
+        int a = 0;
+        int b = 1;
+        int c;
 
         if(position == 0){
             return 0;
