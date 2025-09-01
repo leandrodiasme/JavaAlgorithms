@@ -15,7 +15,7 @@ Each algorithm is implemented in its own directory with:
 - **[Binary Search](./src/BinarySearch.java/)** - Efficiently searches sorted arrays by repeatedly dividing the search interval in half. **Time Complexity:** O(log n) ✅
 
 ### **Sorting Algorithms**
-- **[Bubble Sort](./bubble-sort/)** - Simple comparison-based algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if needed. **Time Complexity:** O(n²)
+- **[Bubble Sort](./bubble-sort/)** - Simple comparison-based algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if needed. **Time Complexity:** O(n²) ✅
 - **[Merge Sort](./merge-sort/)** - Efficient, stable, divide-and-conquer algorithm that divides the array into halves, sorts them, and merges back together. **Time Complexity:** O(n log n)
 - **[Selection Sort](./src/SelectionSort.java/)** - Repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the end of the sorted part. **Time Complexity:** O(n²) ✅
 - **[Topological Sort](./topological-sort/)** - Linear ordering of vertices in a directed acyclic graph where every directed edge goes from earlier to later vertex. **Time Complexity:** O(V + E)
